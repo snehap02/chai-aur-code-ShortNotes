@@ -1,3 +1,27 @@
+//🟡What is Type Conversion?
+
+// As the name implies, type conversion is the process of converting a value from one type to another.
+// Values in JavaScript can be of different types. You could have a number, string, object, boolean
+//Type conversion can either be implicit (automatically done during code execution) or explicit (done by you the developer).
+//Implicit Type Conversion is also known (and more commonly referred to) as Coercion while Explicit Type Conversion is also known as Type Casting.
+
+
+//refer to 
+`https://www.freecodecamp.org/news/coercion-and-type-conversion-in-javascript/`
+//AND
+`https://www.programiz.com/javascript/type-conversion`
+//for more information
+
+
+
+
+
+
+
+
+
+
+
 //so the datatype conversion is important to know , suppose you are handling a file which is giving to you by a frontend developer and when you started handling the data there are some datatype suppose number written as 
 //🟡const {score} = req.body; //taking a request for the datatype score from a frontend body
 //here inside score we know there is a value but we dont know excatly its type
