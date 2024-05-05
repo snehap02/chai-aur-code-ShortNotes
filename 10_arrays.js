@@ -4,7 +4,7 @@ console.log(arr)
 const arr1 = new Array(1,2,4,5,6,7)
 console.log(arr1)
 
-//array methods
+//🟡array methods
 
 const arr2 = [1,2,3,4,5,6];
 console.log(arr2.length);
@@ -38,3 +38,33 @@ console.log(arr3)
 2. The second difference is that in SLICE the original array is not changed but in case of SPLICE the original array is changed.
 3. In case of splice only the removed element is printed as  an output means the return value but to see the change in the original array you have to console.log again.
 */
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************************************/
+//Array takes any entry data as their value ..be it array itself or objects or boolean or any value and treate as a single value .
+const first = ["one", "two", "three", "four", "five", "six"
+]
+const second = [2,3,4,5]
+//first.push(second)
+//console.log(first)
+
+//concat- similar to push ....just the difference is in PUSH() the new entry data is concatinate with the required array as a single value and that array will be printed in the output but in case of CONCAT() the new entry data will completely spread its values with the old array and gives us a new array as the output.
+const third = first.concat(second)
+//console.log("third", third);
+//onsole.log(first);
+
+
+//🟡🔴🟡🔴SPREAD operator -- best method
+const newArray = [...first, ...second];
+console.log(newArray)
+
