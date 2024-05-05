@@ -1,12 +1,12 @@
-const arr = [1,2,3,4,5,6];
+const arr = [1, 2, 3, 4, 5, 6];
 console.log(arr)
 
-const arr1 = new Array(1,2,4,5,6,7)
+const arr1 = new Array(1, 2, 4, 5, 6, 7)
 console.log(arr1)
 
 //🟡array methods
 
-const arr2 = [1,2,3,4,5,6];
+const arr2 = [1, 2, 3, 4, 5, 6];
 console.log(arr2.length);
 console.log(arr2.push(7));
 console.log(arr2);
@@ -22,13 +22,13 @@ console.log(arr2.join()); //join will convert the array into a string (when we c
 
 
 //🟡
-const arr3 = [1,2,3,4,5,6];
+const arr3 = [1, 2, 3, 4, 5, 6];
 console.log(arr3);
-console.log(arr3.slice(1,4)); //returns a copy of the section of an array. slice will not change the original array.
+console.log(arr3.slice(1, 4)); //returns a copy of the section of an array. slice will not change the original array.
 console.log(arr3);
-console.log(arr3.splice(1,4)); //from position 1 remove 4 items from the array
+console.log(arr3.splice(1, 4)); //from position 1 remove 4 items from the array
 console.log(arr3)//splice will change the original array.
-console.log(arr3.splice(1,4, "new", 8, 20)); //from position 1 remove 4 items and add new and 8 into the array
+console.log(arr3.splice(1, 4, "new", 8, 20)); //from position 1 remove 4 items and add new and 8 into the array
 console.log(arr3)
 
 
@@ -54,7 +54,7 @@ console.log(arr3)
 //Array takes any entry data as their value ..be it array itself or objects or boolean or any value and treate as a single value .
 const first = ["one", "two", "three", "four", "five", "six"
 ]
-const second = [2,3,4,5]
+const second = [2, 3, 4, 5]
 //first.push(second)
 //console.log(first)
 
@@ -67,4 +67,34 @@ const third = first.concat(second)
 //🟡🔴🟡🔴SPREAD operator -- best method
 const newArray = [...first, ...second];
 console.log(newArray)
+
+
+
+//suppose we have many many nested arrays inside one array and we want to make all the arrays as a single array
+const arrNested = [1, 2, 3, [9, 20], 4, 5, [6, 7, [5, 9, 10]]]
+const newSingleArray = arrNested.flat(Infinity); //the value of flat can be 1 to Infinity depending on how many array steps you want to remove and make them as an individual value.
+console.log(newSingleArray);
+
+
+
+
+
+console.log(Array.isArray("Sneha")); //to ask that this string is an array or not
+
+console.log(Array.from("Sneha")); //to convert a value to an array
+
+
+//🔴 But in case of object it acts differently
+
+console.log(Array.from({ name: "Sneha" })); //this will print an empty array ........to get the proper value out of this we have to specify particularlt that we want array of objects keys or their values
+
+
+
+
+let val1 = 100
+let val2 = 200
+let val3 = 300
+console.log(Array.of(val1, val2, val3))
+
+
 
