@@ -9,7 +9,12 @@ nigint
 boolean
 undefined
 null - empty- a standalone value ----return value is 0------ and it is object type
-symbol - using any unique values
+🔴symbol - used for unique values -------- Symbol is a built-in object whose constructor returns a symbol primitive — also called a Symbol value or just a Symbol — that's guaranteed to be unique. Symbols are often used to add unique property keys to an object that won't collide with keys any other code might add to the object
+const sym1 = Symbol();
+const sym2 = Symbol("foo");
+const sym3 = Symbol("foo");
+🔴
+Symbol("foo") === Symbol("foo"); // false
 object
 
 
